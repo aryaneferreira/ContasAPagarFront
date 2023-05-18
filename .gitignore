@@ -386,6 +386,7 @@ FodyWeavers.xsd
 *.vscode
 
 *.editorconfig
+*.angular
 
 # Local History for Visual Studio Code
 .history/

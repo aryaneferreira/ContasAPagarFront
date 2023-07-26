@@ -1,12 +1,15 @@
-<p>
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>Contas a Pagar</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar>
-  </p>
+<form class="example-form">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput
+            placeholder="Ex. pat@example.com">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Senha</mat-label>
+      <input type="senha" matInput
+            placeholder="*******">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Entrar</button>
+  </div>
+</form>

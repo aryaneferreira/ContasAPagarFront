@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <mat-icon>add</mat-icon>
+        <span>Cadastrar</span>
+      </button>
+      <button mat-menu-item routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <mat-icon>account_circle</mat-icon>
+        <span>Login</span>
+      </button>
+    </mat-menu>
+    <span>Contas a Pagar</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>

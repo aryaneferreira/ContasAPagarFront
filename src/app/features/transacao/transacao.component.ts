@@ -1,4 +1,23 @@
-<mat-toolbar color="primary">
+import { Component } from "@angular/core";
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { RouterModule, RouterOutlet } from "@angular/router";
+
+@Component({
+    selector: 'app-transacao',
+    standalone: true,
+    imports: [
+        RouterOutlet,
+        MatIconModule,
+        MatToolbarModule,
+        MatButtonModule,
+        RouterModule,
+        MatMenuModule
+    ],
+    template: `
+    <mat-toolbar color="primary">
     <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
@@ -17,4 +36,10 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
       <mat-icon>share</mat-icon>
     </button>
-</mat-toolbar>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    `,
+})
+export class TransacaoComponent {}

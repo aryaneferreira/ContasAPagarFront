@@ -4,9 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { MainMenuComponent } from 'src/app/main-menu/main-menu.component';
 
 @Component({
   selector: 'app-login',
@@ -14,13 +13,12 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   imports: [
     RouterOutlet,
     RouterModule,
-    BrowserModule,
-    BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
     MatInputModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MainMenuComponent
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']

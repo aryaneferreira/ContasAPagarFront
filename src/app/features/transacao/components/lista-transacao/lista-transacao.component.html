@@ -1,4 +1,8 @@
-<p>aqui</p>
-<form action="/action_page.php">
-    <input type="file" id="img" name="img" accept="image/*">
-</form>
+<h1>Transações</h1>
+<mat-list *ngFor="let transacao of transacoes">
+    <mat-list-item>{{transacao.descricao}} - {{transacao.valor}}</mat-list-item>
+    <mat-divider></mat-divider>
+</mat-list>
+<mat-list *ngFor="let tipo of tiposTransacao">
+    <mat-list-item>{{tipo.nome}}</mat-list-item>
+</mat-list>

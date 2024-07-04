@@ -11,8 +11,8 @@ import { MainMenuComponent } from 'src/app/main-menu/main-menu.component';
   selector: 'app-login',
   standalone: true,
   imports: [
-    RouterOutlet,
-    RouterModule,
+    //RouterOutlet,
+    //RouterModule,
     MatIconModule,
     MatButtonModule,
     MatInputModule,

@@ -1,6 +1,11 @@
-<h1>Transações</h1>
-<div>
-    <button mat-raised-button color="primary">Cadastrar</button>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-icon>
+        account_balance
+    </mat-icon>
+    <h1>Transações</h1>
+</div>
+<div fxLayout="row" fxLayoutAlign="end center" class="mr-4">
+    <button mat-raised-button color="primary" [routerLink]="'/transacao/cadastra-transacao'">Cadastrar</button>
 </div>
 <mat-list *ngFor="let transacao of transacoes">
     <mat-list-item>{{transacao.descricao}} - {{transacao.valor}}</mat-list-item>

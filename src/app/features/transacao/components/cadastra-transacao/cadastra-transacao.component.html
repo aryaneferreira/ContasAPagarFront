@@ -1,0 +1,36 @@
+<form [formGroup]="form" fxLayout="column" fxLayoutAlign="center center" class="pt-8">
+  <h2>Nova Transação</h2>
+
+  <mat-radio-group formControlName="tipo">
+    <mat-radio-button value="receita">Receita</mat-radio-button>
+    <mat-radio-button value="despesa">Despesa</mat-radio-button>
+  </mat-radio-group>
+
+  <mat-form-field>
+    <input matInput placeholder="Valor" formControlName="valor">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Descrição" formControlName="descricao">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Cartão" formControlName="cartao">
+      <mat-option *ngFor="let c of cartoes" [value]="c">
+        {{c.nome}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Categoria" formControlName="categoria">
+      <mat-option *ngFor="let c of categorias" [value]="c">
+        {{c.nome}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">
+    Salvar
+  </button>
+</form>

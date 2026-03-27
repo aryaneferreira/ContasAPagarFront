@@ -6,6 +6,11 @@ import { TiposTransacaoModel } from '../../../../models/tipos-transacao-model';
 import { TransacaoService } from 'src/app/services/transacao.service';
 import { TransacaoModel } from 'src/app/models/transacao-model';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-listar-transacao',
@@ -13,7 +18,13 @@ import { MatDividerModule } from '@angular/material/divider';
   imports: [
     MatListModule,
     MatDividerModule,
-    CommonModule
+    CommonModule,
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule,
+    // ReactiveFormsModule,
+    FlexLayoutModule,
+    RouterModule
   ],
   templateUrl: './lista-transacao.component.html',
   styleUrls: ['./lista-transacao.component.css']
